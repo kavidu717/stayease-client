@@ -4,7 +4,7 @@ export default function MainLayout() {
     return (
         <>
          <Header />
-         <main>
+         <main className="py-22"> 
           <Outlet />
          </main>
         
