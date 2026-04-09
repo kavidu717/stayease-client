@@ -50,7 +50,7 @@ export default function Register() {
       <div className="max-w-4xl w-full bg-white/90 backdrop-blur-lg shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white/20 overflow-hidden flex flex-col md:flex-row">
 
         {/* Image Section */}
-        <div className="relative w-full md:w-[40%] h-40 md:h-auto overflow-hidden group">
+        <div className="relative w-full md:w-[50%] h-40 md:h-auto overflow-hidden group">
           <img
             src={registerImg}
             alt="Stay Ease"
@@ -126,6 +126,7 @@ export default function Register() {
                   type="password"
                   placeholder="••••••••"
                   value={password}
+                  autoComplete="off"
                   onChange={(e) => setPassword(e.target.value)}
                   className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-100 rounded-xl outline-none focus:bg-white focus:border-red-500/50 focus:ring-4 focus:ring-red-500/5 transition-all text-sm"
                 />
@@ -153,7 +154,7 @@ export default function Register() {
             <button className="flex-1 flex items-center justify-center gap-2 py-2.5 border border-slate-100 rounded-xl hover:bg-slate-50 transition-colors font-bold text-xs">
               <FcGoogle className="text-lg" /> Google
             </button>
-            <button className="flex-1 flex items-center justify-center gap-2 py-2.5 border border-slate-100 rounded-xl hover:bg-slate-50 transition-colors font-bold text-xs">
+            <button disabled={true} className="flex-1 flex items-center justify-center gap-2 py-2.5 border border-slate-100 rounded-xl hover:bg-slate-50 transition-colors font-bold text-xs">
               <FaApple className="text-lg" /> Apple
             </button>
           </div>
